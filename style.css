@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: Montserrat, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  align-items: center;
+  padding: 0px 150px;
+  height: 60px;
+  color: white;
+  background: #ff9957;
+  /* background-color: #dab85f; */
+  /* background: linear-gradient(
+    90deg,
+    rgba(254, 239, 103, 1) 0%,
+    rgba(255, 237, 87, 1) 46%,
+    rgba(255, 171, 0, 1) 88%
+  ); */
+
+  /* background: linear-gradient(
+    90deg,
+    rgba(255, 237, 87, 1) 13%,
+    rgba(189, 255, 87, 1) 50%,
+    rgba(255, 153, 87, 1) 85%
+  ); */
+  /* 
+  background: linear-gradient(
+    0deg,
+    rgba(255, 237, 87, 1) 14%,
+    rgba(189, 255, 87, 1) 48%,
+    rgba(255, 153, 87, 1) 87%
+  ); */
+
+  /* border: black 1px solid; */
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links li {
+  flex: 1 0 auto;
+  color: white;
+}
+
+.header a {
+  color: white;
+}
+
+#lonely-h3 {
+  flex: 1 0 auto;
+  width: 135px;
+}
+
+.sub-header {
+  display: flex;
+  padding: 40px 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdff57;
+  color: white;
+  height: 270px;
+  gap: 90px;
+  /* background: linear-gradient(
+    0deg,
+    rgba(189, 255, 87, 1) 66%,
+    rgba(255, 237, 87, 1) 85%
+  ); */
+
+  /* this background needs some serious changing */
+}
+.sub-header-left {
+  flex: 1 1 1;
+  width: 450px;
+}
+
+.sub-header-left button,
+.call-to-action-square button {
+  /* I would love to know how to center this */
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #ff9957;
+  outline: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  border: none;
+}
+
+.sub-header img {
+  border-radius: 10px;
+  width: 400px;
+  transform: scaleX(-1);
+}
+
+.lonely-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #ffed57;
+  margin: 0;
+  padding: 1px 0;
+  height: 60px;
+  color: black;
+}
+
+.body-4cards {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 1;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 150px;
+
+  flex-wrap: wrap;
+  /* I want the little cards to make 2 rows if the viewport is small */
+  background-color: #ff9957;
+  /* background-color: #bdff57; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: rgb(111, 197, 236) 6px double;
+  object-fit: cover;
+}
+
+/* Either I make quote and source separate containers so they stack
+or I put them both in a column oriented container in order to also
+make them stack. I tend to believe this section should be in the
+same container - a container for a quote */
+.quote-cont {
+  display: flex;
+  background-color: #ffed57;
+  flex-direction: column;
+  padding: 80px 70px;
+}
+
+.quote {
+  flex: auto;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+.quote-source {
+  flex: auto;
+  /* width: 100px; */
+  text-align: right;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.quote p {
+  margin-bottom: 0;
+}
+
+.quote-source p {
+  margin-top: 0;
+}
+
+.call-to-action {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9957;
+}
+
+.call-to-action-square {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100px;
+  height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding: 0 20px;
+  background-color: #bdff57;
+  border-radius: 10px;
+}
+
+.call-left {
+  flex: 0 1 auto;
+  width: 450px;
+  font-size: 20px;
+  color: white;
+  flex-wrap: wrap;
+  padding-left: 60px;
+}
+
+.call-button {
+  padding-right: 60px;
+}
+
+#call-title {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  background-color: gray;
+  color: wheat;
+  justify-content: center;
+}
+
+/* don't forget to test if everything flexes adequately */
